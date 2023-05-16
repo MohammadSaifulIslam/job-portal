@@ -12,6 +12,15 @@ const PostJobPageHome = () => {
     const onSubmit = data => {
         data.skills = selectedOption;
         console.log(data)
+        fetch('http://localhost:5000/postJob', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
     };
 
 
@@ -41,12 +50,12 @@ const PostJobPageHome = () => {
                         {/* register your input into the hook by invoking the "register" function */}
                         <input placeholder="Job title" {...register("title", { required: true })} className="input input-bordered w-full" required />
 
-                        <CreatableSelect 
+                        <CreatableSelect
                             defaultValue={selectedOption}
                             onChange={setSelectedOption}
                             options={options}
                             isMulti
-                            isSearchable 
+                            isSearchable
                             placeholder="Select skills"
                             className="mt-5" />
 
@@ -56,13 +65,29 @@ const PostJobPageHome = () => {
                         </div>
                         <div className="grid grid-cols-2 gap-5 mt-5">
                             <select {...register("status")} required className="select select-bordered w-full">
-                                <option value="onsite">Onsite</option>
-                                <option value="remote">Remote</option>
+                                <option defaultValue={"Select Job Status"}>Select Job Status</option>
+                                <option value="Onsite">Onsite</option>
+                                <option value="Remote">Remote</option>
                             </select>
-                            <input {...register("date", { required: true })} className="input input-bordered w-full" type="date" required />
+                            <select {...register("category")} required className="select select-bordered w-full">
+                                <option defaultValue={'Select Category'}>Select Category</option>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                            </select>
+
                         </div>
-                        <input {...register("email", { required: true })} className="input input-bordered w-full mt-5" placeholder="Your email" type="email" required />
+                        <div className="grid grid-cols-2 gap-5 mt-5">
+                            <input {...register("date", { required: true })} className="input input-bordered w-full" type="date" required />
+                            <input {...register("email", { required: true })} className="input input-bordered w-full" placeholder="Your email" type="email" required />
+                        </div>
+
                         <input {...register("photo", { required: true })} className="input input-bordered w-full mt-5" placeholder="Photo URL" type="url" required />
+
+                        <textarea {...register("description", { required: true })}
+                            className="textarea textarea-bordered mt-5 w-full" placeholder="Job Description"></textarea>
+
                         {/* errors will return when field validation fails  */}
                         {errors.exampleRequired && <span>This field is required</span>}
                         <input className="btn mt-5 w-full" type="submit" />

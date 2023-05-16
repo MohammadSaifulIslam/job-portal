@@ -9,3 +9,6 @@ body {
 .my-container {
   @apply px-5 max-w-7xl md:mx-auto;
 }
+.btn-outlined {
+  @apply px-5 py-3 border border-blue-500 text-blue-500 font-medium rounded cursor-text;
+}

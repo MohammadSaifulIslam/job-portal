@@ -1,0 +1,290 @@
+[
+  {
+    "title": "Software Engineer",
+    "salary": "$80,000 - $100,000",
+    "photo": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "status": "Remote",
+    "vacancy": 3,
+    "skills": [
+      { "value": "JavaScript" },
+      { "value": "Python" },
+      { "value": "React" },
+      { "value": "Node.js" },
+      { "value": "SQL" }
+    ],
+    "category": "Tech",
+    "email": "softwareengineer@example.com",
+    "date": "2023-05-01",
+    "jobDetails": "We are seeking a skilled Software Engineer to join our team. The ideal candidate should have a strong knowledge of JavaScript, Python, React, Node.js, and SQL. Experience with web development frameworks and databases is a plus. The role involves developing and maintaining software applications, collaborating with cross-functional teams, and ensuring high-quality code delivery."
+  },
+  {
+    "title": "Web Designer",
+    "salary": "$50,000 - $70,000",
+    "photo": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "status": "Onsite",
+    "vacancy": 2,
+    "skills": [
+      { "value": "HTML" },
+      { "value": "CSS" },
+      { "value": "Adobe Photoshop" },
+      { "value": "UI/UX Design" },
+      { "value": "Responsive Design" }
+    ],
+    "category": "Web Design",
+    "email": "webdesigner@example.com",
+    "date": "2023-05-02",
+    "jobDetails": "We are looking for a talented Web Designer to create engaging and user-friendly website designs. The ideal candidate should be proficient in HTML, CSS, and Adobe Photoshop. Experience with UI/UX design principles and responsive design is essential. Responsibilities include designing website layouts, creating graphic assets, and collaborating with developers to implement design solutions."
+  },
+  {
+    "title": "Web Developer",
+    "salary": "$60,000 - $80,000",
+    "photo": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "status": "Remote",
+    "vacancy": 4,
+    "skills": [
+      { "value": "HTML" },
+      { "value": "CSS" },
+      { "value": "JavaScript" },
+      { "value": "React" },
+      { "value": "Node.js" }
+    ],
+    "category": "Web Development",
+    "email": "webdeveloper@example.com",
+    "date": "2023-05-03",
+    "jobDetails": "We are seeking a skilled Web Developer to build and maintain dynamic websites and web applications. The ideal candidate should have expertise in HTML, CSS, JavaScript, React, and Node.js. Familiarity with front-end and back-end development frameworks is a plus. Responsibilities include writing clean and efficient code, troubleshooting issues, and collaborating with designers to implement website features."
+  },
+  {
+    "title": "Graphics Designer",
+    "salary": "$45,000 - $60,000",
+    "photo": "https://img.freepik.com/free-vector/design-tools-concept-illustration_114360-1227.jpg?size=626&ext=jpg&ga=GA1.2.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 1,
+    "skills": [
+      { "value": "Adobe Illustrator" },
+      { "value": "Adobe Photoshop" },
+      { "value": "Typography" },
+      { "value": "Brand Identity" },
+      { "value": "Visual Communication" }
+    ],
+    "category": "Graphics Design",
+    "email": "graphicsdesigner@example.com",
+    "date": "2023-05-04",
+    "jobDetails": "We are looking for a talented Graphics Designer to create visually appealing and impactful designs. The ideal candidate should be proficient in Adobe Illustrator, Adobe Photoshop, and have a strong understanding of typography, brand identity, and visual communication. Experience in creating illustrations and working with vector graphics is a plus. Responsibilities include designing logos, marketing collateral, and digital assets while ensuring brand consistency and meeting client requirements."
+  },
+  {
+    "title": "Data Scientist",
+    "salary": "$90,000 - $120,000",
+    "photo": "https://t4.ftcdn.net/jpg/03/22/23/03/240_F_322230356_28ZMcWaHMVYgqz3gjXHGrwxt2jf2cCxU.jpg",
+    "status": "Remote",
+    "vacancy": 2,
+    "skills": [
+      { "value": "Python" },
+      { "value": "R" },
+      { "value": "Machine Learning" },
+      { "value": "Statistical Analysis" },
+      { "value": "Data Visualization" }
+    ],
+    "category": "Tech",
+    "email": "datascientist@example.com",
+    "date": "2023-05-05",
+    "jobDetails": "We are seeking a skilled Data Scientist to analyze and interpret complex data sets. The ideal candidate should have expertise in Python, R, and a strong understanding of machine learning, statistical analysis, and data visualization. Experience with data manipulation and feature engineering is desirable. Responsibilities include developing predictive models, conducting data analysis, and providing actionable insights to support business decision-making."
+  },
+  {
+    "title": "Mobile App Developer",
+    "salary": "$70,000 - $90,000",
+    "photo": "https://t4.ftcdn.net/jpg/02/25/25/53/240_F_225255328_qigGezjUGmjWEv9FbeLnUvtn3vkJoizU.jpg",
+    "status": "Onsite",
+    "vacancy": 3,
+    "skills": [
+      { "value": "Swift" },
+      { "value": "Java" },
+      { "value": "React Native" },
+      { "value": "Firebase" },
+      { "value": "API Integration" }
+    ],
+    "category": "Tech",
+    "email": "mobileappdeveloper@example.com",
+    "date": "2023-05-06",
+    "jobDetails": "We are looking for a skilled Mobile App Developer to design and develop innovative mobile applications. The ideal candidate should have expertise in Swift, Java, React Native, and have experience with Firebase and API integration. Familiarity with mobile app UI/UX design principles and responsive layouts is desirable. Responsibilities include developing and testing mobile applications, troubleshooting issues, and ensuring optimal performance across different devices and platforms."
+  },
+  {
+    "title": "Network Administrator",
+    "salary": "$60,000 - $80,000",
+    "photo": "https://img.freepik.com/free-photo/young-business-engineer-with-tablet-medium-shot_23-2148323486.jpg?size=626&ext=jpg&ga=GA1.2.562300066.1684249269&semt=ais",
+    "status": "Onsite",
+    "vacancy": 1,
+    "skills": [
+      { "value": "Network Configuration" },
+      { "value": "Troubleshooting" },
+      { "value": "Firewalls" },
+      { "value": "Network Security" },
+      { "value": "Routing and Switching" }
+    ],
+    "category": "Tech",
+    "email": "networkadmin@example.com",
+    "date": "2023-05-07",
+    "jobDetails": "We are seeking a skilled Network Administrator to manage and maintain our network infrastructure. The ideal candidate should have expertise in network configuration, troubleshooting, firewalls, network security, and routing and switching protocols. Knowledge of network monitoring tools and experience with network performance optimization is desirable. Responsibilities include setting up and configuring networks, monitoring network performance, troubleshooting issues, and ensuring network security and reliability."
+  },
+  {
+    "title": "Digital Marketing Specialist",
+    "salary": "$50,000 - $70,000",
+    "photo": "https://img.freepik.com/free-vector/digital-marketing-service-isometric-with-smartphone-laptop-person-with-loudspeaker-green_1284-28152.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 2,
+    "skills": [
+      { "value": "SEO" },
+      { "value": "Social Media Marketing" },
+      { "value": "Google Analytics" },
+      { "value": "Content Marketing" },
+      { "value": "Email Marketing" }
+    ],
+    "category": "Marketing",
+    "email": "marketing@example.com",
+    "date": "2023-05-08",
+    "jobDetails": "We are looking for a talented Digital Marketing Specialist to develop and execute digital marketing strategies. The ideal candidate should have expertise in SEO, social media marketing, Google Analytics, email marketing, and content marketing. Strong analytical and communication skills are essential. Responsibilities include managing social media accounts, optimizing website content, running digital ad campaigns, analyzing campaign performance, and identifying growth opportunities."
+  },
+  {
+    "title": "UX/UI Designer",
+    "salary": "$60,000 - $80,000",
+    "photo": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 2,
+    "skills": [
+      { "value": "User Research" },
+      { "value": "Wireframing" },
+      { "value": "Prototyping" },
+      { "value": "Usability Testing" },
+      { "value": "Interaction Design" }
+    ],
+    "category": "Design",
+    "email": "uxui@example.com",
+    "date": "2023-05-09",
+    "jobDetails": "We are seeking a skilled UX/UI Designer to create intuitive and visually appealing user interfaces. The ideal candidate should have expertise in user research, wireframing, prototyping, usability testing, and interaction design. Proficiency in design tools such as Sketch, Figma, or Adobe XD is essential. Responsibilities include conducting user research, creating wireframes and prototypes, collaborating with developers to implement designs, and conducting usability testing."
+  },
+  {
+    "title": "Project Manager",
+    "salary": "$70,000 - $90,000",
+    "photo": "https://img.freepik.com/free-vector/project-management-concept-flat-style_23-2147796101.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 2,
+    "skills": [
+      { "value": "Agile Methodologies" },
+      { "value": "Project Planning" },
+      { "value": "Team Management" },
+      { "value": "Risk Assessment" },
+      { "value": "Stakeholder Communication" }
+    ],
+    "category": "Management",
+    "email": "projectmanager@example.com",
+    "date": "2023-05-10",
+    "jobDetails": "We are seeking an experienced Project Manager to oversee the successful execution of projects.The ideal candidate should have expertise in project planning, team management, risk assessment, Agile methodology, and budgeting and resource allocation. Strong leadership and communication skills are essential. Responsibilities include defining project objectives, coordinating and managing project teams, monitoring progress, identifying risks, and ensuring project deliverables are completed on time and within budget."
+  },
+  {
+    "title": "Quality Assurance Analyst",
+    "salary": "$50,000 - $70,000",
+    "photo": "https://img.freepik.com/free-photo/quality-control-improvement-development-concept_53876-139720.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Onsite",
+    "vacancy": 2,
+    "skills": [
+      { "value": "Manual Testing" },
+      { "value": "Test Automation" },
+      { "value": "Bug Tracking" },
+      { "value": "Test Documentation" },
+      { "value": "Regression Testing" }
+    ],
+    "category": "Tech",
+    "email": "qaanalyst@example.com",
+    "date": "2023-05-11",
+    "jobDetails": "We are seeking a detail-oriented Quality Assurance Analyst to ensure the quality and reliability of our software products. The ideal candidate should have experience in manual testing, test planning, test execution, defect tracking, and regression testing. Strong analytical and problem-solving skills are essential. Responsibilities include creating test plans, executing test cases, identifying and documenting defects, and working closely with the development team to ensure the delivery of high-quality software."
+  },
+  {
+    "title": "Content Writer",
+    "salary": "$40,000 - $60,000",
+    "photo": "https://img.freepik.com/free-vector/hand-drawn-essay-illustration_23-2150310009.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 3,
+    "skills": [
+      { "value": "Copywriting" },
+      { "value": "SEO Writing" },
+      { "value": "Blogging" },
+      { "value": "Editing and Proofreading" },
+      { "value": "Creative Writing" }
+    ],
+    "category": "Writing",
+    "email": "contentwriter@example.com",
+    "date": "2023-05-12",
+    "jobDetails": "We are looking for a skilled Content Writer to create engaging and compelling content. The ideal candidate should have expertise in copywriting, editing, SEO writing, content strategy, and creative writing. Strong research and communication skills are essential. Responsibilities include writing blog posts, articles, website content, social media posts, and collaborating with the marketing team to develop content strategies."
+  },
+  {
+    "title": "Sales Representative",
+    "salary": "$40,000 - $60,000",
+    "photo": "https://img.freepik.com/free-vector/businessman-office-with-e-mail-marketing-icons_24877-51319.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 2,
+    "skills": [
+      { "value": "Sales Techniques" },
+      { "value": "Negotiation" },
+      { "value": "Relationship Building" },
+      { "value": "Customer Service" },
+      { "value": "Lead Generation" }
+    ],
+    "category": "Sales",
+    "email": "sales@example.com",
+    "date": "2023-05-13",
+    "jobDetails": "We are seeking a results-driven Sales Representative to join our sales team. The ideal candidate should have experience in sales techniques, negotiation, relationship building, customer service, and lead generation. Strong communication and interpersonal skills are essential. Responsibilities include prospecting and acquiring new customers, managing client accounts, meeting sales targets, and maintaining customer relationships."
+  },
+  {
+    "title": "Financial Analyst",
+    "salary": "$70,000 - $90,000",
+    "photo": "https://img.freepik.com/free-photo/paper-analysis_1098-15678.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Onsite",
+    "vacancy": 1,
+    "skills": [
+      { "value": "Financial Modeling" },
+      { "value": "Data Analysis" },
+      { "value": "Financial Reporting" },
+      { "value": "Investment Analysis" },
+      { "value": "Risk Assessment" }
+    ],
+    "category": "Finance",
+    "email": "financialanalyst@example.com",
+    "date": "2023-05-14",
+    "jobDetails": "We are seeking a skilled Financial Analyst to provide financial insights and analysis. The ideal candidate should have expertise in financial modeling, data analysis, financial reporting, budgeting and forecasting, and proficiency in Excel. Strong analytical and problem-solving skills are essential. Responsibilities include analyzing financial data, preparing reports, identifying trends, and providing recommendations to support business decision-making."
+  },
+  {
+    "title": "Human Resources Manager",
+    "salary": "$60,000 - $80,000",
+    "photo": "https://img.freepik.com/free-vector/isometric-characters-illustration-human-resources-doing-interview_1284-24421.jpg?size=626&ext=jpg&ga=GA1.1.562300066.1684249269&semt=ais",
+    "status": "Remote",
+    "vacancy": 1,
+    "skills": [
+      { "value": "Recruitment" },
+      { "value": "Employee Relations" },
+      { "value": "Performance Management" },
+      { "value": "Training and Development" },
+      { "value": "HR Policies and Procedures" }
+    ],
+    "category": "Human Resources",
+    "email": "hrmanager@example.com",
+    "date": "2023-05-15",
+    "jobDetails": "We are looking for an experienced HR Manager to oversee all aspects of human resources management. The ideal candidate should have expertise in recruitment, employee relations, performance management, HR policies, and training and development. Strong organizational and leadership skills are essential. Responsibilities include managing the recruitment process, handling employee relations, implementing HR policies, conducting performance evaluations, and facilitating employee training and development."
+  },
+  {
+    "title": "Customer Support Specialist",
+    "salary": "$40,000 - $60,000",
+    "photo": "https://t4.ftcdn.net/jpg/04/27/60/79/240_F_427607974_DQc46JOXtro7MTNCltGAf4R6498HGZaJ.jpg",
+    "status": "Remote",
+    "vacancy": 3,
+    "skills": [
+      { "value": "Customer Service" },
+      { "value": "Problem Solving" },
+      { "value": "Communication Skills" },
+      { "value": "Technical Troubleshooting" },
+      { "value": "Ticketing System" }
+    ],
+    "category": "Customer Support",
+    "email": "customersupport@example.com",
+    "date": "2023-05-16",
+    "jobDetails": "We are looking for a dedicated Customer Support Specialist to provide excellent customer service and resolve technical issues. The ideal candidate should have strong customer service skills, problem-solving abilities, effective communication skills, and experience with technical troubleshooting. Familiarity with CRM systems is desirable. Responsibilities include handling customer inquiries, troubleshooting technical issues, providing product information and assistance, and maintaining customer satisfaction."
+  }
+]
