@@ -9,20 +9,20 @@ const Category = () => {
                 <div className="grid md:grid-cols-4 gap-5 text-center">
                     <div className="p-10 rounded-lg bg-[#a0a0a0] flex flex-col  items-center text-lg font-semibold">
                    
-                        <BriefcaseIcon className="h-16 w-16 "></BriefcaseIcon>
+                        <BriefcaseIcon className="h-16 w-16  "></BriefcaseIcon>
                
                         Onsite
                     </div>
                     <div className="p-10 rounded-lg bg-[#a0a0a0] flex flex-col  items-center text-lg font-semibold">
-                        <HomeIcon className="h-16 w-16"></HomeIcon>
+                        <HomeIcon className="h-16 w-16 "></HomeIcon>
                         Remote
                     </div>
                     <div className="p-10 rounded-lg bg-[#a0a0a0] flex flex-col  items-center text-lg font-semibold">
-                        <UserGroupIcon className="h-16 w-16"></UserGroupIcon>
+                        <UserGroupIcon className="h-16 w-16 "></UserGroupIcon>
                         Fulltime
                     </div>
                     <div className="p-10 rounded-lg bg-[#a0a0a0] flex flex-col  items-center text-lg font-semibold">
-                        <UserIcon className="h-16 w-16"></UserIcon>
+                        <UserIcon className="h-16 w-16 "></UserIcon>
                         Parttime
                     </div>
                 </div>
