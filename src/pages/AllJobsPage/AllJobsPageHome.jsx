@@ -1,9 +1,41 @@
 import { MagnifyingGlassCircleIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import JobCard from "../HomaPage/AvailableJobs/JobCard/JobCard";
 
 const AllJobsPageHome = () => {
     const [jobs, setJobs] = useState([]);
+
+
+    // pagination state 
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 4;
+
+    // pagiation data load
+    const { totalJobs } = useLoaderData();
+
+    // pagination
+    const totalPage = Math.ceil(totalJobs / itemsPerPage);
+
+    const pageNumbers = [...Array(totalPage).keys()]
+    console.log({ pageNumbers })
+
+    // pagination: load data by using current page and itemsPerPage 
+    useEffect(() => {
+        const fetchData = async () => {
+            // Make API call here, passing currentPage and itemsPerPage as query parameters
+            const response = await fetch(`http://localhost:5000/jobs?page=${currentPage}`);
+            const result = await response.json();
+            setJobs(result);
+        };
+
+        fetchData();
+    }, [currentPage]);
+
+
+
+
+
 
     // seacrh jobs by title and category
     const [searchText, setSearchText] = useState('');
@@ -17,13 +49,13 @@ const AllJobsPageHome = () => {
 
 
     }
-    useEffect(() => {
-        fetch(`http://localhost:5000/allJobs/text`)
-            .then(res => res.json())
-            .then(data => {
-                setJobs(data)
-            })
-    }, [])
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/allJobs/text`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setJobs(data)
+    //         })
+    // }, [])
 
     return (
         <div className="my-container my-20">
@@ -44,6 +76,20 @@ const AllJobsPageHome = () => {
                         job={job}
                     ></JobCard>)
                 }
+            </div>
+
+            {/* pagination */}
+            <div className="text-center text-lg font-medium my-10 space-x-5">
+                {
+                    jobs.length === 4 &&
+                    pageNumbers.map(number => <button
+                        key={number}
+                        onClick={() => setCurrentPage(number + 1)}
+                        className={`border border-red-500 h-8 w-8 rounded-full duration-300 ${currentPage === number + 1 && 'bg-red-500 h-8 w-8 rounded-full text-white'}`}>
+                        {number + 1}
+                    </button>)
+                }
+
             </div>
         </div>
     );
