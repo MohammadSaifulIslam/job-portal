@@ -6,7 +6,10 @@ const JobDetailsPage = () => {
     return (
         <div className="py-20 bg-[#f9fcff]">
             <div className="my-container ">
-                <h2 className="text-5xl font-bold text-center mb-10 ">Job Details</h2>
+                <div className="section-title text-center mb-10">
+                    <h2 className="text-3xl font-bold mb-2">Job Details</h2>
+                    <p>Most popular categories of portal, sorted by popularity</p>
+                </div>
                 <div className='p-10 bg-white shadow-xl rounded-xl grid md:grid-cols-2 gap-5'>
                     <figure className='rounded-lg w-full h-[300px] md:h-full'><img className='object-cover w-full h-full rounded-lg' src={photo} alt="" /></figure>
                     <div>

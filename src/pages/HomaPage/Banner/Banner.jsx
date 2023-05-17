@@ -1,4 +1,6 @@
 // import { AdjustmentsVerticalIcon, MagnifyingGlassIcon, MapPinIcon, TagIcon } from '@heroicons/react/24/solid';
+import { MagnifyingGlassCircleIcon } from '@heroicons/react/24/solid';
+import { Link } from 'react-router-dom';
 import bannerImg from '../../../assets/images/banner-1.webp';
 const Banner = () => {
     return (
@@ -11,7 +13,11 @@ const Banner = () => {
 
                     <div className='flex gap-4 mt-5'>
                         <input type="text" placeholder='Job Title' className='my-input' />
-                        <input type="text" placeholder='Job Title' className='my-input' />
+                        <input type="text" placeholder='Job Category' className='my-input' />
+                      <Link to='/allJobs'>
+                      <button><MagnifyingGlassCircleIcon className='h-12 w-12 text-red-500'></MagnifyingGlassCircleIcon></button>
+                      </Link>
+
                     </div>
                 </div>
                 <div className="banner-img">

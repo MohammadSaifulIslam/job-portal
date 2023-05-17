@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
+import AllJobsPageHome from "../pages/AllJobsPage/AllJobsPageHome";
 import AppliedJobPageHome from "../pages/AppliedJobPage/AppliedJobPageHome";
 import Home from "../pages/HomaPage/Home/Home";
 import JobDetailsPage from "../pages/JobDetailsPage/JobDetailsPage";
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         {
             path:'/',
             element: <Home></Home>
+        },
+        {
+            path:'allJobs',
+            element: <AllJobsPageHome></AllJobsPageHome>
         },
         {
             path:'postJob',
