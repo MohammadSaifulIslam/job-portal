@@ -10,5 +10,15 @@ body {
   @apply px-5 max-w-7xl md:mx-auto;
 }
 .btn-outlined {
-  @apply px-5 py-3 border border-blue-500 text-blue-500 font-medium rounded cursor-text;
+  @apply py-1 px-3 border bg-[#ffd8d2] text-[#ff605d] font-medium rounded cursor-text;
+}
+.my-btn {
+  @apply py-2 px-5 uppercase font-medium text-white bg-red-500 duration-300 rounded-lg cursor-pointer hover:bg-red-600;
+}
+.btn-active {
+  @apply py-2 px-5 uppercase font-medium text-white bg-green-500 duration-300 rounded-lg cursor-pointer hover:bg-green-600;
+}
+
+.my-input {
+  @apply px-5 py-2 w-full rounded-3xl border focus:outline-red-500;
 }

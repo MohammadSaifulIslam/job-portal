@@ -1,14 +1,12 @@
-import Lottie from "lottie-react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import CreatableSelect from 'react-select/creatable';
-
-import { useState } from "react";
-import animationPicture from '../../assets/lottie/129467-job-hunting.json';
+import postImage from '../../assets/images/postImage.webp';
 
 const PostJobPageHome = () => {
     const [selectedOption, setSelectedOption] = useState(null);
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         data.skills = selectedOption;
         console.log(data)
@@ -41,14 +39,14 @@ const PostJobPageHome = () => {
     ]
 
     return (
-        <div className="py-20">
+        <div className="py-20 bg-[#f9fcff]">
             <h2 className="text-5xl font-bold text-center mb-10">Post a Job</h2>
 
-            <div className="my-container grid md:grid-cols-2 gap-6">
+            <div className="my-container grid md:grid-cols-2 gap-6 ">
                 <div className="">
-                    <form className="border-2 border-black rounded-xl p-10" onSubmit={handleSubmit(onSubmit)}>
+                    <form className="border-2 border-red-500 bg-white rounded-xl p-10" onSubmit={handleSubmit(onSubmit)}>
                         {/* register your input into the hook by invoking the "register" function */}
-                        <input placeholder="Job title" {...register("title", { required: true })} className="input input-bordered w-full" required />
+                        <input placeholder="Job title" {...register("title", { required: true })} className='my-input' required />
 
                         <CreatableSelect
                             defaultValue={selectedOption}
@@ -60,16 +58,16 @@ const PostJobPageHome = () => {
                             className="mt-5" />
 
                         <div className="flex gap-5 mt-5">
-                            <input {...register("salary", { required: true })} className="input input-bordered w-full" placeholder="Salary" required type="number" />
-                            <input {...register("vacancy", { required: true })} className="input input-bordered w-full" placeholder="Vacancy" type="number" required />
+                            <input {...register("salary", { required: true })} className='my-input' placeholder="Salary" required type="number" />
+                            <input {...register("vacancy", { required: true })} className='my-input' placeholder="Vacancy" type="number" required />
                         </div>
                         <div className="grid grid-cols-2 gap-5 mt-5">
-                            <select {...register("status")} required className="select select-bordered w-full">
+                            <select {...register("status")} required className='my-input'>
                                 <option defaultValue={"Select Job Status"}>Select Job Status</option>
                                 <option value="Onsite">Onsite</option>
                                 <option value="Remote">Remote</option>
                             </select>
-                            <select {...register("category")} required className="select select-bordered w-full">
+                            <select {...register("category")} required className='my-input'>
                                 <option defaultValue={'Select Category'}>Select Category</option>
                                 <option value="Web Design">Web Design</option>
                                 <option value="Web Development">Web Development</option>
@@ -79,22 +77,20 @@ const PostJobPageHome = () => {
 
                         </div>
                         <div className="grid grid-cols-2 gap-5 mt-5">
-                            <input {...register("date", { required: true })} className="input input-bordered w-full" type="date" required />
-                            <input {...register("email", { required: true })} className="input input-bordered w-full" placeholder="Your email" type="email" required />
+                            <input {...register("date", { required: true })} className='my-input' type="date" required />
+                            <input {...register("email", { required: true })} className='my-input' placeholder="Your email" type="email" required />
                         </div>
 
-                        <input {...register("photo", { required: true })} className="input input-bordered w-full mt-5" placeholder="Photo URL" type="url" required />
+                        <input {...register("photo", { required: true })} className='my-input mt-5' placeholder="Photo URL" type="url" required />
 
                         <textarea {...register("description", { required: true })}
-                            className="textarea textarea-bordered mt-5 w-full" placeholder="Job Description"></textarea>
+                            className='mt-5 my-input' placeholder="Job Description"></textarea>
 
-                        {/* errors will return when field validation fails  */}
-                        {errors.exampleRequired && <span>This field is required</span>}
-                        <input className="btn mt-5 w-full" type="submit" />
+                        <input className="my-btn mt-5 w-full" type="submit" />
                     </form>
                 </div>
-                <div>
-                    <Lottie animationData={animationPicture} loop={true} />
+                <div className="flex items-center">
+                    <img src={postImage} alt="post a job image" className="object-contain  w-full h-full" />
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="bg-black text-white">
-            <div className="px-5 max-w-7xl md:mx-auto  navbar ">
+        <section className="py-4 sticky top-0 z-50 bg-white shadow">
+            <nav className="my-container navbar ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,26 +24,35 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">JobPortal</a>
+                    <Link to='/'><span className="text-2xl font-bold"><span className="text-red-500">Job</span>Portal</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-5 font-medium">
                         <li>
-                            <NavLink to='/' className={({ isActive }) => isActive ?"text-red-500" : ''}>Home</NavLink>
+                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/postJob' className={({ isActive }) => isActive ?"text-red-500" : ''}>Post a Job</NavLink>
+                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>All Jobs</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/appliedJob' className={({ isActive }) =>  isActive ?"text-red-500" : ''}>Applied Job</NavLink>
+                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>Blog</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/appliedJob' className={({ isActive }) => isActive ? "text-red-500" : ''}>Applied Job</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>Contact</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>Sign in</NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-red-500">Add a Job</a>
+                    <Link to='/postJob'>  <button className="my-btn ">Post a Job</button></Link>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
     );
 };
 
