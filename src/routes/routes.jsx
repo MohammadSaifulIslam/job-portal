@@ -7,6 +7,7 @@ import ContactPageHome from "../pages/ContactPage/ContactPageHome";
 import Home from "../pages/HomaPage/Home/Home";
 import JobDetailsPage from "../pages/JobDetailsPage/JobDetailsPage";
 import Login from "../pages/Others/Login/Login";
+import Register from "../pages/Others/Register/Register";
 import PostJobPageHome from "../pages/PostJobPage/PostJobPageHome";
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         {
             path:'signIn',
             element: <Login></Login>
+        },
+        {
+            path:'register',
+            element: <Register></Register>
         },
       ]
     },

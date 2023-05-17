@@ -90,7 +90,7 @@ const Login = () => {
             <p className='text-center mt-2'>Don't have an account? <Link to='/register' className='text-red-500 underline'>Create an account</Link></p>
 
             {/* login with google and github */}
-            <div className="divider">or signin with</div>
+            <div className="divider">or sign in with</div>
            <div className="flex justify-between gap-4 mt-2">
            <p onClick={handleLoginWithGoogle} className='btn-outlined w-full block text-center cursor-pointer'>Google</p>
             <p onClick={handleLoginWithGithub} className='btn-outlined cursor-pointer w-full block text-center '>Github</p>
