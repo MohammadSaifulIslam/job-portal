@@ -44,7 +44,7 @@ const Navbar = () => {
                             <NavLink to='/contact' className={({ isActive }) => isActive ? "text-red-500" : ''}>Contact</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/' className={({ isActive }) => isActive ? "text-red-500" : ''}>Sign in</NavLink>
+                            <NavLink to='/signIn' className={({ isActive }) => isActive ? "text-red-500" : ''}>Sign in</NavLink>
                         </li>
                     </ul>
                 </div>

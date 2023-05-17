@@ -10,7 +10,7 @@ body {
   @apply px-5 max-w-7xl md:mx-auto;
 }
 .btn-outlined {
-  @apply py-1 px-3 border bg-[#ffd8d2] text-[#ff605d] font-medium rounded cursor-text;
+  @apply py-1 px-3 border bg-[#ffd8d2] text-[#ff605d] font-medium rounded cursor-pointer;
 }
 .my-btn {
   @apply py-2 px-5 uppercase font-medium text-white bg-red-500 duration-300 rounded-lg cursor-pointer hover:bg-red-600;
